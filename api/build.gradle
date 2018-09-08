@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'com.springcloud'
+group 'com.com.atguigu.springcloud'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = JavaVersion.VERSION_1_10
