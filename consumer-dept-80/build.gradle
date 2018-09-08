@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group 'com.springcloud'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    maven { url "http://maven.aliyun.com/nexus/content/groups/public" }
+    maven { url "http://repo.spring.io/snapshot" }
+    maven { url "http://repo.spring.io/milestone" }
+    jcenter()
+}
+
+dependencies {
+    compile project(':api')
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.0.4.RELEASE'
+
+    // https://mvnrepository.com/artifact/org.springframework/springloaded
+    compile group: 'org.springframework', name: 'springloaded', version: '1.2.8.RELEASE'
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools
+    compile group: 'org.springframework.boot', name: 'spring-boot-devtools', version: '2.0.4.RELEASE'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
