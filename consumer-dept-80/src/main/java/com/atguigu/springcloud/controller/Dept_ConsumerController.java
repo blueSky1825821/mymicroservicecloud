@@ -8,7 +8,7 @@ import org.springframework.web.client.RestTemplate;
 import javax.annotation.Resource;
 
 /**
- * 微服务消费者
+ * consumer
  * Created by wm on 2018/9/7.
  */
 @RestController
