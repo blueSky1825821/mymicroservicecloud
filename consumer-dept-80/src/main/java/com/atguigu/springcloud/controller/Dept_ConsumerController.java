@@ -2,6 +2,7 @@ package com.atguigu.springcloud.controller;
 
 import com.atguigu.springcloud.cfgbeans.entities.Dept;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
@@ -21,5 +22,10 @@ public class Dept_ConsumerController {
     @RequestMapping(value = "/consumer/dept/add")
     public Boolean add(Dept dept) {
         return restTemplate.postForObject(REST_URL_PREFIX + "/dept/add", dept, Boolean.class);
+    }
+
+    @RequestMapping(value = "/consumer/dept/discovery", method = RequestMethod.GET)
+    public Object discovery() {
+        return restTemplate.getForObject(REST_URL_PREFIX + "/dept/discovery", Object.class);
     }
 }

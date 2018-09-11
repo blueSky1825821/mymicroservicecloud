@@ -3,4 +3,6 @@ include 'api'
 include 'provider-dept-8001'
 include 'consumer-dept-80'
 include 'eureka-7001'
+include 'eureka-7002'
+include 'eureka-7003'
 
