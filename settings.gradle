@@ -5,4 +5,6 @@ include 'consumer-dept-80'
 include 'eureka-7001'
 include 'eureka-7002'
 include 'eureka-7003'
+include 'provider-dept-8002'
+include 'provider-dept-8003'
 
