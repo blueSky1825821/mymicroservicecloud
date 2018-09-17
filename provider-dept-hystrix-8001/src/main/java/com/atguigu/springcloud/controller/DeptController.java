@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
+ *
+ * @Description: lkkl
  * Created by wm on 2018/9/6.
  */
 @RestController
@@ -22,6 +24,7 @@ public class DeptController {
     }
 
     @RequestMapping(value = "/dept/get/{id}", method = RequestMethod.GET)
+    //一旦调用服务方法事变并抛出错误信息后，会调用HystrixCommand 标注好的 fallbackMethod
     @HystrixCommand(fallbackMethod = "processHystrix_Get")
     public Dept get(@PathVariable("id") Long id) {
         Dept dept = this.service.get(id);
