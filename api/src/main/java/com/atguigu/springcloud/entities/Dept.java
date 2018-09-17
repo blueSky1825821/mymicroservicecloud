@@ -1,4 +1,4 @@
-package com.atguigu.springcloud.cfgbeans.entities;
+package com.atguigu.springcloud.entities;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

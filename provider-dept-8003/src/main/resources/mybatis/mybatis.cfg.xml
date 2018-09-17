@@ -8,7 +8,7 @@
     </settings>
 
     <typeAliases>
-        <typeAlias type="com.atguigu.springcloud.cfgbeans.entities.Dept" alias="Dept"/>
+        <typeAlias type="com.atguigu.springcloud.entities.Dept" alias="Dept"/>
     </typeAliases>
 
     <!--<environments default="development">-->
