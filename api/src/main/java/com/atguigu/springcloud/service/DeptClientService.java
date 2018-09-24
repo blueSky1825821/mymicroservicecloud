@@ -14,6 +14,7 @@ import java.util.List;
 
 /**
  * feign负载均衡
+ * 服务降级：整体资源不够，将某些服务关掉，待正常后，再开回来。客户端可以自己准备一个本地的fallback回调，返回一个缺省值
  */
 //@FeignClient(value = "MICROSERVICECLOUD-DEPT")
 @FeignClient(value = "MICROSERVICECLOUD-DEPT", fallbackFactory = DeptClientServiceFallbackFactory.class)
